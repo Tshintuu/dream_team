@@ -1,0 +1,88 @@
+/* Résolution Mobile.*/
+@media screen and (min-width: 375px) and (max-width: 812px) {}
+
+/* Résolution Tablette.*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {}
+
+/* Résolution Desktop.*/
+@media screen and (min-width: 1025px) {}
+
+.img_search {
+    width: 20px;
+}
+
+footer {
+    background-color: #404040;
+    color: white;
+}
+
+.link a {
+    color: orange !important;
+    font-weight: 600;
+}
+
+.endparaf {
+    color: grey;
+}
+
+.endtext {
+    height: 100%;
+    margin-top: 5%;
+    margin-left: 5%;
+    padding-bottom: 5%;
+}
+
+.endtext h3 {
+    font-weight: 600;
+}
+
+.endtext p {
+    margin-top: 10%
+}
+
+body {
+    padding-top: 80px;
+
+}
+
+.logoFooter {
+    width: 50px;
+}
+
+.follow {
+    font-weight: 600;
+    padding-top: 2.8% !important;
+}
+
+.logoHead {
+    width: 120px
+}
+
+.styleFooter {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.footerTitle {
+    font-size: 1.1em;
+}
+
+.lineFooter {
+    background-color: grey;
+}
+
+.textFb {
+    font-weight: 600;
+}
+
+.textTw {
+    font-weight: 600;
+}
+
+.porte {
+    width:30%;
+}
+
+.sizeIcon {
+    
+}
