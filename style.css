@@ -7,6 +7,15 @@
 /* Résolution Desktop.*/
 @media screen and (min-width: 1025px) {}
 
+
+/*@import url('https://fonts.googleapis.com/css?family=Barlow');*/
+
+@font-face{
+    font-family: 'Barlow';
+    src: url('fonts/Barlow-Medium.ttf');
+}
+
+
 .img_search {
     width: 20px;
 }
@@ -42,6 +51,8 @@ footer {
 
 body {
     padding-top: 80px;
+    font-family: 'Barlow', sans-serif !important;
+    background-image: url("img/dust_scratches.png");
 
 }
 
@@ -81,6 +92,76 @@ body {
 
 .porte {
     width:30%;
+}
+
+.trendsTitle h2{
+    font-size: 1.2rem;
+    color: #f78f2c;
+    font-weight: 600;
+}
+
+.trendsTitle h3, .articlesTitle h3{
+    font-size: 0.9rem;
+    color: #a1a1a1;
+    font-weight: 600;
+}
+
+.trends li{
+    font-size: 0.8rem;
+}
+
+.trends ul, .articles ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.trends ul li, .articles ul li{
+    padding: 4% 0 2% 0;
+    border-bottom: 1px solid #e5e5e5;
+    
+}
+
+.listFirst{
+    border-top: 1px solid #e5e5e5;
+}
+
+.chart{
+    width: 20%;
+    margin-right: 3%;
+    padding: 0;
+}
+/*.chartItemFull{
+    background-color: orange;
+    width: 0.2rem;
+    height: 1.4rem;
+    margin: 0 1% 0 1%;
+    border-radius: 2px;
+}*/
+
+.chartImg{
+    height: 75%;
+    padding-top: 4%;
+}
+
+.trends ul li a{
+    padding-top: 2%;
+    font-weight: 600;
+}
+
+.articlesTitle h2{
+    font-size: 1.2rem;
+    color: #506a85;
+}
+
+.articles ul li{
+    padding-bottom: 5%;
+}
+
+.articleImg{
+    margin: 0;
+    padding-top: 3%;
+    width: 20%;
+    height: 20%;
 }
 
 /*.sizeIcon {
