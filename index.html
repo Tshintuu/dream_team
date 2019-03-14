@@ -10,10 +10,10 @@
         crossorigin="anonymous">
 </head>
 
-<body>
+<body class="bg-light">
     <header>
         <!-- En tête de la page. -->
-        <nav class="navbar navbar-light bg-light container-col-12 fixed-top">
+        <nav class="navbar navbar-light bg-light container-col-12 fixed-top shadow-sm mb-5">
             <div class="col-lg-1 col-0"></div>
             <div class="col-8 col-lg-1">
                 <img src="img/logo.png" alt="Logo" class="logoHead" />
@@ -67,8 +67,8 @@
                             <input class="form-control" type="search" placeholder="Recherche une veille, un mot-clé, un site web..."
                                 aria-label="Search">
                             <div class="input-group-append mr-sm-4">
-                                <button class="btn btn-outline-warning bg-warning" type="button" id="button-addon2"><img src="img/search_icon.png"
-                                        alt="search" class="img_search" /> </button>
+                                <button class="btn btn-outline-warning bg-warning" type="button" id="button-addon2"><img
+                                        src="img/search_icon.png" alt="search" class="img_search" /> </button>
                             </div>
                         </div>
                     </form>
@@ -77,9 +77,53 @@
         </nav>
     </header>
 
+    <!-- Avant Article -->
+
+    <div class="text-left intro mt-5 ml-2">
+        <h1 class="sizeH1 pb-2">VOTRE VEILLE TECHNOLOGIE QUOTIDIENNE</h1>
+        <div class="mb-4">
+            <a href="#" class="link link-secondary">Voir toutes les veilles</a>
+        </div>
+    </div>
+
+    <!-- Article -->
+    <div class="pt-4 border border-black-50 ml-2 mt-2 mr-2 mb-2 rounded">
+        <article>
+            <div>
+                <a href="#">
+                    <div class="border border-muted rounded ml-2 mr-2">
+                        <img src="https://img.lafermeduweb.net/img_list_format/img/links/2019/03/1105730210576646144.jpg"
+                            class="img-fluid" alt="articleTitle" />
+                    </div>
+                </a>
+            </div>
+            <div>
+                <div class="pl-3 pt-3 pb-3">
+                    <a href="#" class="text-dark font-weight-bold">
+                        Traduora: une plateforme de traduction collaborative avec une sortie multi formats
+                    </a>
+                </div>
+                <ul class="d-flex pl-3">
+                    <li class="list-group-item border border-secondary rounded mr-2 pl-2 pr-2 pt-1 pb-1"><a href="#">
+                            <span class="text-danger">#collaborative</span></a></li>
+                    <li class="list-group-item border border-secondary rounded mr-2 pl-2 pr-2 pt-1 pb-1"><a href="#">
+                            <span class="text-success">#traduction</span></a></li>
+                </ul>
+            </div>
+            <div class="mb-4">
+                <span class="pl-3">Djo -</span>
+                <span class="text-black-50">13 Mars 2019 à 08h20</span>
+            </div>
+        </article>
+    </div>
+    <div class="mb-5">
+        <a href="#" class="border rounded border-warning bg-warning pl-4 pr-4 pt-2 pb-2 ml-3 mt-3 h-50 d-inline-block text-light font-weight-bold ">
+            VOIR TOUTES LES VEILLES</a>
+    </div>
+
     <!-- Pied de page -->
     <footer class="pl-1 pr-2 pt-3 styleFooter">
-        <div class="container col-12 d-flex flex-column flex-lg-row">
+        <div class="container col-12 d-flex flex-column flex-lg-row rounded">
             <ul class="nav d-inline d-md-flex">
                 <li class="nav-item link">
                     <a class="nav-link active" href="#">Mention légales</a>

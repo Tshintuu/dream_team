@@ -42,6 +42,7 @@ footer {
 
 body {
     padding-top: 80px;
+    background-color: grey;
 
 }
 
@@ -80,8 +81,17 @@ body {
 }
 
 .porte {
-    width:30%;
+    width: 30%;
 }
+
+/* ajout pour la partie Avant Article & Article */
+
+.sizeH1 {
+    font-size: 1.5rem;
+    color: grey;
+    font-weight: 700;
+}
+
 
 /*.sizeIcon {
     
