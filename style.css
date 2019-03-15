@@ -134,7 +134,7 @@ body {
 }
 
 .chart{
-    margin-bottom: 3%;
+    margin-bottom: 2%;
     padding: 0;
 }
 /*.chartItemFull{
@@ -145,9 +145,10 @@ body {
     border-radius: 2px;
 }*/
 
-/*.chartImg{
-    height: 140%;
-}*/
+.chartImg{
+    height: 100% !important;
+    width: 100% !important;
+}
 
 .trends ul li a{
     padding-top: 0;
