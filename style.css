@@ -7,15 +7,6 @@
 /* Résolution Desktop.*/
 @media screen and (min-width: 1025px) {}
 
-
-/*@import url('https://fonts.googleapis.com/css?family=Barlow');*/
-
-@font-face{
-    font-family: 'Barlow';
-    src: url('fonts/Barlow-Medium.ttf');
-}
-
-
 .img_search {
     width: 20px;
 }
@@ -51,8 +42,6 @@ footer {
 
 body {
     padding-top: 80px;
-    font-family: 'Barlow', sans-serif !important;
-    background-image: url("img/dust_scratches.png");
 
 }
 
@@ -91,87 +80,95 @@ body {
 }
 
 .porte {
-    width: 30%;
-}
-
-/* ajout pour la partie Avant Article & Article */
-
-.sizeH1 {
-    font-size: 1.5rem;
-    color: grey;
-    font-weight: 700;
-}
-
-.trendsTitle h2{
-    font-size: 1.2rem;
-    color: #f78f2c;
-    font-weight: 600;
-}
-
-.trendsTitle h3, .articlesTitle h3{
-    font-size: 0.9rem;
-    color: #a1a1a1;
-    font-weight: 600;
-}
-
-.trends li{
-    font-size: 0.8rem;
-}
-
-.trends ul, .articles ul{
-    list-style: none;
-    padding-left: 0;
-}
-
-.trends ul li, .articles ul li{
-    padding: 4% 0 2% 0;
-    border-bottom: 1px solid #e5e5e5;
-    
-}
-
-.listFirst{
-    border-top: 1px solid #e5e5e5;
-}
-
-.chart{
-    width: 20%;
-    margin-right: 3%;
-    padding: 0;
-}
-/*.chartItemFull{
-    background-color: orange;
-    width: 0.2rem;
-    height: 1.4rem;
-    margin: 0 1% 0 1%;
-    border-radius: 2px;
-}*/
-
-.chartImg{
-    height: 30%;
-    padding-top: 4%;
-}
-
-.trends ul li a{
-    padding-top: 2%;
-    font-weight: 600;
-}
-
-.articlesTitle h2{
-    font-size: 1.2rem;
-    color: #506a85;
-}
-
-.articles ul li{
-    padding-bottom: 5%;
-}
-
-.articleImg{
-    margin: 0;
-    padding-top: 3%;
-    width: 20%;
-    height: 20%;
+    width:30%;
 }
 
 /*.sizeIcon {
     
 }*/
+
+/* CONTACT US */
+
+body {
+    background-color: #25274d;
+}
+
+/*
+PARTIE DE BASE QUI POSE PROBLEME
+
+.contact {
+    padding: 4%;
+    height: 400px;
+}
+*/
+.contact{
+    padding-bottom: 4%
+
+}
+
+
+
+
+.col-md-3 {
+    background: #ff9b00;
+    padding: 4%;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.contact-info {
+    margin-top: 10%;
+}
+
+.contact-info img {
+    margin-bottom: 15%;
+}
+
+.contact-info h2 {
+    margin-bottom: 10%;
+    color:white;
+}
+
+.col-md-9 {
+    background: #fff;
+    padding: 3%;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.contact-form label {
+    font-weight: 600;
+}
+
+.contact-form button {
+    background: #25274d;
+    color: #fff;
+    font-weight: 600;
+    width: 25%;
+}
+
+.contact-form button:focus {
+    box-shadow: none;
+}
+
+.petit_nuage{
+
+    width:40%;
+}
+
+.mail_wings{
+    width:40%;
+    transform: rotate(10deg);
+}
+
+
+
+.text_contact_us{
+    padding-bottom: 2%;
+    color:white;
+}
+
+.para_contact{
+    padding-bottom: 2px;
+   }
+
