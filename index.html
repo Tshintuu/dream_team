@@ -15,7 +15,7 @@
         <!-- En tête de la page. -->
         <nav class="navbar navbar-light bg-light container-col-12 fixed-top shadow-sm mb-5">
             <div class="col-lg-1 col-0"></div>
-            <div class="col-8 col-lg-1">
+            <div class="col-8 col-sm-10 col-lg-1">
                 <img src="img/logo.png" alt="Logo" class="logoHead" />
             </div>
             </div>
@@ -59,8 +59,7 @@
                     <a class="dropdown-item" href="#">Se connecter via Github</a>
                 </div>
             </div>
-            <div class="col-2"></div>
-            </div>
+            <div class="col-2 col-sm-0"></div>
             <div class="collapse d-lg-none" id="collapseExample">
                 <div class="card card-body bg-light border-light">
                     <form class="form-inline">
@@ -75,6 +74,7 @@
                     </form>
                 </div>
             </div>
+            <div class="col-0 col-sm-2 col-lg-0"></div>
         </nav>
     </header>
 
@@ -88,210 +88,232 @@
     </div>
 
     <!-- Article -->
-    <div class="pt-4 border border-black-50 ml-2 mt-2 mr-2 mb-2 rounded">
-        <article>
-            <div>
-                <a href="#">
-                    <div class="border border-muted rounded ml-2 mr-2">
-                        <img src="https://img.lafermeduweb.net/img_list_format/img/links/2019/03/1105730210576646144.jpg"
-                            class="img-fluid" alt="articleTitle" />
-                    </div>
-                </a>
-            </div>
-            <div>
-                <div class="pl-3 pt-3 pb-3">
-                    <a href="#" class="text-dark font-weight-bold">
-                        Traduora: une plateforme de traduction collaborative avec une sortie multi formats
+    <div class="pt-4 border border-black-50 ml-2 mt-2 mr-2 mb-2 pb-md-4 rounded backgroundArticle">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="#">
+                        <div class="border border-muted rounded ml-2 mr-2">
+                            <img src="https://img.lafermeduweb.net/img_list_format/img/links/2019/03/1105730210576646144.jpg"
+                                class="img-fluid" alt="articleTitle" />
+                        </div>
                     </a>
                 </div>
-                <ul class="d-flex pl-3">
-                    <li class="list-group-item border border-secondary rounded mr-2 pl-2 pr-2 pt-1 pb-1"><a href="#">
-                            <span class="text-danger">#collaborative</span></a></li>
-                    <li class="list-group-item border border-secondary rounded mr-2 pl-2 pr-2 pt-1 pb-1"><a href="#">
-                            <span class="text-success">#traduction</span></a></li>
-                </ul>
+                <div class="col-md-6">
+                    <div class="articleDetail">
+                        <div class="pl-3 pt-3 pb-3 titleArticle">
+                            <a href="#" class="text-dark font-weight-bold">
+                                Traduora: une plateforme de traduction collaborative avec une sortie multi formats
+                            </a>
+                        </div>
+                        <ul class="d-flex pl-3">
+                            <li class="list-group-item border border-secondary rounded mr-2 pl-2 pr-2 pt-1 pb-1"><a
+                                    href="#">
+                                    <span class="text-danger">#collaborative</span></a></li>
+                            <li class="list-group-item border border-secondary rounded mr-2 pl-2 pr-2 pt-1 pb-1"><a
+                                    href="#">
+                                    <span class="text-success">#traduction</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="mb-4">
+                        <span class="pl-3">Djo -</span>
+                        <span class="text-black-50">13 Mars 2019 à 08h20</span>
+                    </div>
+                </div>
             </div>
-            <div class="mb-4">
-                <span class="pl-3">Djo -</span>
-                <span class="text-black-50">13 Mars 2019 à 08h20</span>
-            </div>
-        </article>
+        </div>
     </div>
     <div class="mb-5">
         <a href="#"
             class="border rounded border-warning bg-warning pl-4 pr-4 pt-2 pb-2 ml-3 mt-3 h-50 d-inline-block text-light font-weight-bold ">
             VOIR TOUTES LES VEILLES</a>
     </div>
-
-    <section class="pl-3 pr-3 trends">
-        <div class="mt-4 trendsTitle">
-            <h2>LES TENDANCES</h2>
-            <h3>DES 10 DERNIERS JOURS</h3>
+    <div class="container">
+        <div class="row">
+            <section class="pl-3 pr-3 col-sm-6 trends">
+                <div class="mt-4 trendsTitle">
+                    <h2>LES TENDANCES</h2>
+                    <h3>DES 10 DERNIERS JOURS</h3>
+                </div>
+                <ul class="mt-4">
+                    <li class="container-col-12 listFirst">
+                        <div class="row">
+                            <a class="col-9">Console</a>
+                            <div class="col-2 d-flex justify-content-between chart">
+                                <img class="chartImg" src="img/pop_bar7.png" alt="4 out of 7"></img>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="container-col-12 listFirst">
+                        <div class="row">
+                            <a class="col-9">Javascript</a>
+                            <div class="col-2 d-flex justify-content-between chart">
+                                <img class="chartImg" src="img/pop_bar4.png" alt="4 out of 7"></img>
+                            </div>
+                    </li>
+                    <li class="container-col-12 listFirst">
+                        <div class="row">
+                            <a class="col-9">React.js</a>
+                            <div class="col-2 d-flex justify-content-between chart">
+                                <img class="chartImg" src="img/pop_bar4.png" alt="4 out of 7"></img>
+                            </div>
+                    </li>
+                    <li class="container-col-12 listFirst">
+                        <div class="row">
+                            <a class="col-9">PHP</a>
+                            <div class="col-2 d-flex justify-content-between chart">
+                                <img class="chartImg" src="img/pop_bar3.png" alt="4 out of 7"></img>
+                            </div>
+                    </li>
+                    <li class="container-col-12 listFirst">
+                        <div class="row">
+                            <a class="col-9">CSS</a>
+                            <div class="col-2 d-flex justify-content-between chart">
+                                <img class="chartImg" src="img/pop_bar3.png" alt="4 out of 7"></img>
+                            </div>
+                    </li>
+                    <li class="container-col-12 listFirst">
+                        <div class="row">
+                            <a class="col-9">Webprefs</a>
+                            <div class="col-2 d-flex justify-content-between chart">
+                                <img class="chartImg" src="img/pop_bar3.png" alt="4 out of 7"></img>
+                            </div>
+                    </li>
+                    <li class="container-col-12 listFirst">
+                        <div class="row">
+                            <a class="col-9">Frameworks</a>
+                            <div class="col-2 d-flex justify-content-between chart">
+                                <img class="chartImg" src="img/pop_bar3.png" alt="4 out of 7"></img>
+                            </div>
+                    </li>
+                    <li class="container-col-12 listFirst">
+                        <div class="row">
+                            <a class="col-9">Animations</a>
+                            <div class="col-2 d-flex justify-content-between chart">
+                                <img class="chartImg" src="img/pop_bar3.png" alt="4 out of 7"></img>
+                            </div>
+                    </li>
+                    <li class="container-col-12 listFirst">
+                        <div class="row">
+                            <a class="col-9">Outils</a>
+                            <div class="col-2 d-flex justify-content-between chart">
+                                <img class="chartImg" src="img/pop_bar3.png" alt="4 out of 7"></img>
+                            </div>
+                    </li>
+                    <li class="container-col-12 listFirst">
+                        <div class="row">
+                            <a class="col-9">SEO</a>
+                            <div class="col-2 d-flex justify-content-between chart">
+                                <img class="chartImg" src="img/pop_bar2.png" alt="4 out of 7"></img>
+                            </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="pl-3 pr-3 col-sm-6 articles">
+                <div class="mt-4 articlesTitle">
+                    <h2>ARTICLES POPULAIRES</h2>
+                    <h3>DES 10 DERNIERS JOURS</h3>
+                </div>
+                <ul class="mt-4">
+                    <li class="d-flex justify-content-between listFirst">
+                        <div class="col-1">
+                            <img src="https://img.lafermeduweb.net/veille_68_48/img/links/2019/03/1102826152564011008.jpg"
+                                alt="Htrace : un outil pour faire du profiling HTTP/HTTPS avancé">
+                        </div>
+                        <div class="col-9">
+                            <a href="#">Htrace : un outil pour faire du profiling HTTP/HTTPS avancé</a>
+                        </div>
+                    </li>
+                    <li class="d-flex justify-content-between">
+                        <div class="col-1">
+                            <img src="https://img.lafermeduweb.net/veille_68_48/img/links/2019/03/1102838663405359107.jpg"
+                                alt="Web : installez directement les dépendances npm depuis votre navigateur sans Webpack ou Browserify">
+                        </div>
+                        <div class="col-9">
+                            <a href="#">Web : installez directement les dépendances npm depuis votre
+                                navigateur sans Webpack ou Browserify</a>
+                        </div>
+                    </li>
+                    <li class="d-flex justify-content-between">
+                        <div class="col-1">
+                            <img src="https://img.lafermeduweb.net/veille_68_48/img/links/2019/03/1102836141575806976.jpg"
+                                alt="Focus sur les User Roles et ACL dans Laravel">
+                        </div>
+                        <div class="col-9">
+                            <a href="#">Focus sur les User Roles et ACL dans Laravel</a>
+                        </div>
+                    </li>
+                    <li class="d-flex justify-content-between">
+                        <div class="col-1">
+                            <img src="https://img.lafermeduweb.net/veille_68_48/img/links/2019/03/1102828592571052034.jpg"
+                                alt="Vita : une gateway VPN simple et efficace">
+                        </div>
+                        <div class="col-9">
+                            <a href="#">Vita : une gateway VPN simple et efficace</a>
+                        </div>
+                    </li>
+                    <li class="d-flex justify-content-between">
+                        <div class="col-1">
+                            <img src="https://img.lafermeduweb.net/veille_68_48/img/links/2019/03/1105005441237561345.jpg"
+                                alt="Apprendre à maîtriser Docker en 5 leçons de débutant à expert">
+                        </div>
+                        <div class="col-9">
+                            <a href="#">Apprendre à maîtriser Docker en 5 leçons de débutant à expert</a>
+                        </div>
+                    </li>
+                    <li class="d-flex justify-content-between">
+                        <div class="col-1">
+                            <img src="https://img.lafermeduweb.net/veille_68_48/img/links/2019/03/1102831108314578946.jpg"
+                                alt="Une série vidéo sur le SEO dans les apps Javascript par Google">
+                        </div>
+                        <div class="col-9">
+                            <a href="#">Une série vidéo sur le SEO dans les apps Javascript par Google</a>
+                        </div>
+                    </li>
+                    <li class="d-flex justify-content-between">
+                        <div class="col-1">
+                            <img src="https://img.lafermeduweb.net/veille_68_48/img/links/2019/03/1102833683386589184.jpg"
+                                alt="Les Hooks React.js moins performants que l'utilisation de classes ?">
+                        </div>
+                        <div class="col-9">
+                            <a href="#">Les Hooks React.js moins performants que l'utilisation de classes ?</a>
+                        </div>
+                    </li>
+                    <li class="d-flex justify-content-between">
+                        <div class="col-1">
+                            <img src="https://img.lafermeduweb.net/veille_68_48/img/links/2019/03/1105010471365758977.jpg"
+                                alt="Gotify : un serveur opensource pour recevoir et envoyer des messages en temps réel via websockets et REST">
+                        </div>
+                        <div class="col-9">
+                            <a href="#">Gotify : un serveur opensource pour recevoir et envoyer des messages en temps
+                                réel via
+                                websockets et REST</a>
+                        </div>
+                    </li>
+                    <li class="d-flex justify-content-between">
+                        <div class="col-1">
+                            <img src="https://img.lafermeduweb.net/veille_68_48/img/links/2019/03/1105000453035696128.jpg"
+                                alt="Olive Video Editor : un éditeur de vidéo non-linéaire open source pour Windows, Mac et Linux">
+                        </div>
+                        <div class="col-9">
+                            <a href="#">Olive Video Editor : un éditeur de vidéo non-linéaire open source pour Windows,
+                                Mac et
+                                Linux</a>
+                        </div>
+                    </li>
+                    <li class="d-flex justify-content-between">
+                        <div class="col-1">
+                            <img src="https://img.lafermeduweb.net/veille_68_48/img/links/2019/03/1105007982692192257.jpg"
+                                alt="ArchiveBox : archivez des copies de sites en local avec tous les médias liés">
+                        </div>
+                        <div class="col-9">
+                            <a href="#">ArchiveBox : archivez des copies de sites en local avec tous les médias liés</a>
+                        </div>
+                    </li>
+                </ul>
+            </section>
         </div>
-        <ul class="mt-4">
-            <li class="d-flex justify-content-between listFirst">
-                <a>Console</a>
-                <div class="d-flex justify-content-between w-30 chart">
-                    <img class="chartImg" src="img/pop_bar7.png" alt="4 out of 7"></img>
-                </div>
-            </li>
-            <li class="d-flex justify-content-between">
-                <a>Javascript</a>
-                <div class="d-flex justify-content-between w-30 chart">
-                    <img class="chartImg" src="img/pop_bar4.png" alt="4 out of 7"></img>
-                </div>
-            </li>
-            <li class="d-flex justify-content-between">
-                <a>React.js</a>
-                <div class="d-flex justify-content-between w-30 chart">
-                    <img class="chartImg" src="img/pop_bar4.png" alt="4 out of 7"></img>
-                </div>
-            </li>
-            <li class="d-flex justify-content-between">
-                <a class="trends-item-title">PHP</a>
-                <div class="d-flex justify-content-between w-30 chart">
-                    <img class="chartImg" src="img/pop_bar3.png" alt="4 out of 7"></img>
-                </div>
-            </li>
-            <li class="d-flex justify-content-between">
-                <a>CSS</a>
-                <div class="d-flex justify-content-between w-30 chart">
-                    <img class="chartImg" src="img/pop_bar3.png" alt="4 out of 7"></img>
-                </div>
-            </li>
-            <li class="d-flex justify-content-between">
-                <a>Webprefs</a>
-                <div class="d-flex justify-content-between w-30 chart">
-                    <img class="chartImg" src="img/pop_bar3.png" alt="4 out of 7"></img>
-                </div>
-            </li>
-            <li class="d-flex justify-content-between">
-                <a>Frameworks</a>
-                <div class="d-flex justify-content-between w-30 chart">
-                    <img class="chartImg" src="img/pop_bar3.png" alt="4 out of 7"></img>
-                </div>
-            </li>
-            <li class="d-flex justify-content-between">
-                <a>Animations</a>
-                <div class="d-flex justify-content-between w-30 chart">
-                    <img class="chartImg" src="img/pop_bar3.png" alt="4 out of 7"></img>
-                </div>
-            </li>
-            <li class="d-flex justify-content-between">
-                <a>Outils</a>
-                <div class="d-flex justify-content-between w-30 chart">
-                    <img class="chartImg" src="img/pop_bar3.png" alt="4 out of 7"></img>
-                </div>
-            </li>
-            <li class="d-flex justify-content-between">
-                <a>SEO</a>
-                <div class="d-flex justify-content-between w-30 chart">
-                    <img class="chartImg" src="img/pop_bar2.png" alt="4 out of 7"></img>
-                </div>
-            </li>
-        </ul>
-    </section>
-    <section class="pl-3 pr-3 articles">
-        <div class="mt-4 articlesTitle">
-            <h2>ARTICLES POPULAIRES</h2>
-            <h3>DES 10 DERNIERS JOURS</h3>
-        </div>
-        <ul class="mt-4">
-            <li class="d-flex justify-content-between listFirst">
-                <div class="col-1">
-                    <img src="https://img.lafermeduweb.net/veille_68_48/img/links/2019/03/1102826152564011008.jpg"
-                        alt="Htrace : un outil pour faire du profiling HTTP/HTTPS avancé">
-                </div>
-                <div class="col-9">
-                    <a href="#">Htrace : un outil pour faire du profiling HTTP/HTTPS avancé</a>
-                </div>
-            </li>
-            <li class="d-flex justify-content-between">
-                <div class="col-1">
-                    <img src="https://img.lafermeduweb.net/veille_68_48/img/links/2019/03/1102838663405359107.jpg"
-                        alt="Web : installez directement les dépendances npm depuis votre navigateur sans Webpack ou Browserify">
-                </div>
-                <div class="col-9">
-                    <a href="#">Web : installez directement les dépendances npm depuis votre
-                        navigateur sans Webpack ou Browserify</a>
-                </div>
-            </li>
-            <li class="d-flex justify-content-between">
-                <div class="col-1">
-                    <img src="https://img.lafermeduweb.net/veille_68_48/img/links/2019/03/1102836141575806976.jpg"
-                        alt="Focus sur les User Roles et ACL dans Laravel">
-                </div>
-                <div class="col-9">
-                    <a href="#">Focus sur les User Roles et ACL dans Laravel</a>
-                </div>
-            </li>
-            <li class="d-flex justify-content-between">
-                <div class="col-1">
-                    <img src="https://img.lafermeduweb.net/veille_68_48/img/links/2019/03/1102828592571052034.jpg"
-                        alt="Vita : une gateway VPN simple et efficace">
-                </div>
-                <div class="col-9">
-                    <a href="#">Vita : une gateway VPN simple et efficace</a>
-                </div>
-            </li>
-            <li class="d-flex justify-content-between">
-                <div class="col-1">
-                    <img src="https://img.lafermeduweb.net/veille_68_48/img/links/2019/03/1105005441237561345.jpg"
-                        alt="Apprendre à maîtriser Docker en 5 leçons de débutant à expert">
-                </div>
-                <div class="col-9">
-                    <a href="#">Apprendre à maîtriser Docker en 5 leçons de débutant à expert</a>
-                </div>
-            </li>
-            <li class="d-flex justify-content-between">
-                <div class="col-1">
-                    <img src="https://img.lafermeduweb.net/veille_68_48/img/links/2019/03/1102831108314578946.jpg"
-                        alt="Une série vidéo sur le SEO dans les apps Javascript par Google">
-                </div>
-                <div class="col-9">
-                    <a href="#">Une série vidéo sur le SEO dans les apps Javascript par Google</a>
-                </div>
-            </li>
-            <li class="d-flex justify-content-between">
-                <div class="col-1">
-                    <img src="https://img.lafermeduweb.net/veille_68_48/img/links/2019/03/1102833683386589184.jpg"
-                        alt="Les Hooks React.js moins performants que l'utilisation de classes ?">
-                </div>
-                <div class="col-9">
-                    <a href="#">Les Hooks React.js moins performants que l'utilisation de classes ?</a>
-                </div>
-            </li>
-            <li class="d-flex justify-content-between">
-                <div class="col-1">
-                    <img src="https://img.lafermeduweb.net/veille_68_48/img/links/2019/03/1105010471365758977.jpg"
-                        alt="Gotify : un serveur opensource pour recevoir et envoyer des messages en temps réel via websockets et REST">
-                </div>
-                <div class="col-9">
-                    <a href="#">Gotify : un serveur opensource pour recevoir et envoyer des messages en temps réel via
-                        websockets et REST</a>
-                </div>
-            </li>
-            <li class="d-flex justify-content-between">
-                <div class="col-1">
-                    <img src="https://img.lafermeduweb.net/veille_68_48/img/links/2019/03/1105000453035696128.jpg"
-                        alt="Olive Video Editor : un éditeur de vidéo non-linéaire open source pour Windows, Mac et Linux">
-                </div>
-                <div class="col-9">
-                    <a href="#">Olive Video Editor : un éditeur de vidéo non-linéaire open source pour Windows, Mac et
-                        Linux</a>
-                </div>
-            </li>
-            <li class="d-flex justify-content-between">
-                <div class="col-1">
-                    <img src="https://img.lafermeduweb.net/veille_68_48/img/links/2019/03/1105007982692192257.jpg"
-                        alt="ArchiveBox : archivez des copies de sites en local avec tous les médias liés">
-                </div>
-                <div class="col-9">
-                    <a href="#">ArchiveBox : archivez des copies de sites en local avec tous les médias liés</a>
-                </div>
-            </li>
-        </ul>
-    </section>
+    </div>
     <!-- Pied de page -->
     <footer class="pl-1 pr-2 pt-3 styleFooter">
         <div class="container col-12 d-flex flex-column flex-lg-row rounded">
