@@ -16,7 +16,18 @@
     .sizeH1 {
         font-size: 2.75rem !important;
     }
-}
+    
+    .trendsTitle h2{
+        font-size: 2rem !important;
+    }
+
+    .trendsTitle h3, .articlesTitle h3{
+        font-size: 1.2rem !important;
+    }
+
+    .articlesTitle h2{
+        font-size: 2rem !important;
+    }
 }
 
 /* Résolution Desktop.*/
