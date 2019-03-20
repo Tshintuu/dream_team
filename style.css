@@ -91,7 +91,9 @@ body {
 }
 
 .porte {
-    width: 30%;
+    width: 100%;
+    padding-top:20% !important;
+    padding-right: 20%;
 }
 
 /* ajout pour la partie Avant Article & Article */
@@ -175,3 +177,6 @@ body {
 /*.sizeIcon {
     
 }*/
+
+
+
