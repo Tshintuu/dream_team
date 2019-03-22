@@ -13,54 +13,60 @@
 <body class="bg-light">
     <header>
         <!-- En tête de la page. -->
-        <nav class="navbar navbar-light bg-light container-col-12 fixed-top shadow-sm mb-5">
-            <div class="col-lg-1 col-0"></div>
-            <div class="col-8 col-sm-10 col-lg-1">
-                <img src="img/logo.png" alt="Logo" class="logoHead" />
-            </div>
-            </div>
-            <form class="d-none d-lg-inline form-inline">
-                <div class="input-group">
-                    <input class="form-control" type="search"
-                        placeholder="Recherche une veille, un mot-clé, un site web..." aria-label="Search">
-                    <div class="input-group-append mr-sm-4">
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon2"><img
-                                src="img/search_icon.png" alt="search" class="img_search" /> </button>
+        <nav class="navbar navbar-light bg-light container-col-12 fixed-top shadow-sm mb-5 w-100">
+            <div class="row w-100">
+                <div class="col-0 col-lg-2"></div>
+                <div class="col-6 col-sm-3 col-lg-2 container-col-12">
+                    <a href="#firstArticle"><img src="img/logo.png" alt="Logo" class="col-12 col-lg-6" /></a>
+                </div>
+                <div class="d-none d-sm-flex col-md-5 d-lg-none"></div>
+                <form class="d-none d-lg-inline col-lg-4 form-inline">
+                    <div class="input-group">
+                        <input class="form-control" type="search"
+                            placeholder="Recherche une veille, un mot-clé, un site web..." aria-label="Search">
+                        <div class="input-group-append mr-sm-4">
+                            <button class="btn btn-outline-secondary" type="button" id="button-addon2"><img
+                                    src="img/search_icon.png" alt="search" class="img_search" /> </button>
+                        </div>
+                    </div>
+                </form>
+                <div class="col-6 col-sm-4 col-lg-2 container-col-12">
+                    <div class="row pt-2 justify-content-end">
+                        <div class="col-6 col-sm-6 col-lg-2">
+                            <a class="btn btn d-lg-none" data-toggle="collapse" href="#collapseExample" role="button"
+                                aria-expanded="false" aria-controls="collapseExample">
+                                <img src="img/search_icon.png" alt="icon" class="img_search" />
+                            </a>
+                        </div>
+                        <div class="dropdown col-4 col-sm-1 col-lg-2 d-flex justify-content-end">
+                            <button class="btn btn-secondary dropdown-toggle d-none d-lg-inline" type="button"
+                                id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                MON COMPTE
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right bg-light"
+                                aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Se connecter via Twitter</a>
+                                <a class="dropdown-item" href="#">Se connecter via Google</a>
+                                <a class="dropdown-item" href="#">Se connecter via Facebook</a>
+                                <a class="dropdown-item" href="#">Se connecter via Github</a>
+                            </div>
+                            <button class="navbar-toggler d-lg-none" type="button" data-toggle="dropdown"
+                                data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                                aria-expanded="false" aria-label="Toggle navigation" id="searchBtn">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right bg-dark" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Se connecter via Twitter</a>
+                                <a class="dropdown-item" href="#">Se connecter via Google</a>
+                                <a class="dropdown-item" href="#">Se connecter via Facebook</a>
+                                <a class="dropdown-item" href="#">Se connecter via Github</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </form>
-            <div>
-                <a class="btn btn d-lg-none" data-toggle="collapse" href="#collapseExample" role="button"
-                    aria-expanded="false" aria-controls="collapseExample">
-                    <img src="img/search_icon.png" alt="icon" class="img_search" />
-                </a>
-
             </div>
-            <div class="dropdown d-flex justify-content-end">
-                <button class="btn btn-secondary dropdown-toggle d-none d-lg-inline" type="button"
-                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    MON COMPTE
-                </button>
-                <div class="dropdown-menu dropdown-menu-right bg-light" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Se connecter via Twitter</a>
-                    <a class="dropdown-item" href="#">Se connecter via Google</a>
-                    <a class="dropdown-item" href="#">Se connecter via Facebook</a>
-                    <a class="dropdown-item" href="#">Se connecter via Github</a>
-                </div>
-                <button class="navbar-toggler d-lg-none" type="button" data-toggle="dropdown"
-                    data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                    aria-expanded="false" aria-label="Toggle navigation" id="searchBtn">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="dropdown-menu dropdown-menu-right bg-dark" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Se connecter via Twitter</a>
-                    <a class="dropdown-item" href="#">Se connecter via Google</a>
-                    <a class="dropdown-item" href="#">Se connecter via Facebook</a>
-                    <a class="dropdown-item" href="#">Se connecter via Github</a>
-                </div>
-            </div>
-            <div class="col-2 col-sm-0"></div>
-            <div class="collapse d-lg-none" id="collapseExample">
+            <div class="collapse d-lg-none m-auto" id="collapseExample">
                 <div class="card card-body bg-light border-light">
                     <form class="form-inline">
                         <div class="input-group">
@@ -74,244 +80,452 @@
                     </form>
                 </div>
             </div>
-            <div class="col-0 col-sm-2 col-lg-0"></div>
         </nav>
     </header>
 
     <!-- Avant Article -->
-
-    <div class="text-left intro mt-5 ml-2">
-        <h1 class="sizeH1 pb-2">VOTRE VEILLE TECHNOLOGIE QUOTIDIENNE</h1>
-        <div class="mb-4">
-            <a href="#" class="link link-secondary">Voir toutes les veilles</a>
-        </div>
-    </div>
-
-    <!-- Article -->
-    <div class="pt-4 border border-black-50 ml-2 mt-2 mr-2 mb-2 pb-md-4 rounded backgroundArticle">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <a href="#">
-                        <div class="border border-muted rounded ml-2 mr-2">
-                            <img src="https://img.lafermeduweb.net/img_list_format/img/links/2019/03/1105730210576646144.jpg"
-                                class="img-fluid" alt="articleTitle" />
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6">
-                    <div class="articleDetail">
-                        <div class="pl-3 pt-3 pb-3 titleArticle">
-                            <a href="#" class="text-dark font-weight-bold">
-                                Traduora: une plateforme de traduction collaborative avec une sortie multi formats
-                            </a>
-                        </div>
-                        <ul class="d-flex pl-3">
-                            <li class="list-group-item border border-secondary rounded mr-2 pl-2 pr-2 pt-1 pb-1"><a
-                                    href="#">
-                                    <span class="text-danger">#collaborative</span></a></li>
-                            <li class="list-group-item border border-secondary rounded mr-2 pl-2 pr-2 pt-1 pb-1"><a
-                                    href="#">
-                                    <span class="text-success">#traduction</span></a></li>
-                        </ul>
-                    </div>
-                    <div class="mb-4">
-                        <span class="pl-3">Djo -</span>
-                        <span class="text-black-50">13 Mars 2019 à 08h20</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="mb-5">
-        <a href="#"
-            class="border rounded border-warning bg-warning pl-4 pr-4 pt-2 pb-2 ml-3 mt-3 h-50 d-inline-block text-light font-weight-bold ">
-            VOIR TOUTES LES VEILLES</a>
-    </div>
-    <div class="container">
+    <div class="container mainBlock">
         <div class="row">
-            <section class="pl-3 pr-3 col-sm-6 trends">
-                <div class="mt-4 trendsTitle">
-                    <h2>LES TENDANCES</h2>
-                    <h3>DES 10 DERNIERS JOURS</h3>
+            <section class="col-lg-8">
+                <div class="text-left intro mt-5 ml-2">
+                    <h1 id="firstArticle" class="sizeH1 pb-2">VOTRE VEILLE TECHNOLOGIQUE QUOTIDIENNE</h1>
+                    <div class="mb-4">
+                        <a href="#" class="link link-secondary">Voir toutes les veilles</a>
+                    </div>
                 </div>
-                <ul class="mt-4">
-                    <li class="container-col-12 listFirst">
+
+                <!-- Article -->
+                <div class="pt-4 border border-black-50 ml-2 mt-2 mr-2 mb-2 mb-lg-4 pb-md-4 rounded backgroundArticle">
+                    <div class="container">
                         <div class="row">
-                            <a class="col-9">Console</a>
-                            <div class="col-2 d-flex justify-content-between chart">
-                                <img class="chartImg" src="img/pop_bar7.png" alt="4 out of 7"></img>
+                            <div class="col-md-6">
+                                <a href="#">
+                                    <div class="border border-muted rounded ml-2 mr-2">
+                                        <img src="https://img.lafermeduweb.net/img_list_format/img/links/2019/03/1105730210576646144.jpg"
+                                            class="img-fluid" alt="articleTitle" />
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="articleDetail">
+                                    <div class="pl-3 pt-3 pb-3 titleArticle">
+                                        <a href="#" class="text-dark font-weight-bold">
+                                            Traduora: une plateforme de traduction collaborative avec une sortie multi
+                                            formats
+                                        </a>
+                                    </div>
+                                    <ul class="d-flex pl-3">
+                                        <li
+                                            class="list-group-item border border-secondary rounded mr-2 pl-2 pr-2 pt-1 pb-1">
+                                            <a href="#">
+                                                <span class="text-danger">#collaborative</span></a></li>
+                                        <li
+                                            class="list-group-item border border-secondary rounded mr-2 pl-2 pr-2 pt-1 pb-1">
+                                            <a href="#">
+                                                <span class="text-success">#traduction</span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="mb-4">
+                                    <span class="pl-3">Djo -</span>
+                                    <span class="text-black-50">13 Mars 2019 à 08h20</span>
+                                </div>
                             </div>
                         </div>
-                    </li>
-                    <li class="container-col-12 listFirst">
-                        <div class="row">
-                            <a class="col-9">Javascript</a>
-                            <div class="col-2 d-flex justify-content-between chart">
-                                <img class="chartImg" src="img/pop_bar4.png" alt="4 out of 7"></img>
-                            </div>
-                    </li>
-                    <li class="container-col-12 listFirst">
-                        <div class="row">
-                            <a class="col-9">React.js</a>
-                            <div class="col-2 d-flex justify-content-between chart">
-                                <img class="chartImg" src="img/pop_bar4.png" alt="4 out of 7"></img>
-                            </div>
-                    </li>
-                    <li class="container-col-12 listFirst">
-                        <div class="row">
-                            <a class="col-9">PHP</a>
-                            <div class="col-2 d-flex justify-content-between chart">
-                                <img class="chartImg" src="img/pop_bar3.png" alt="4 out of 7"></img>
-                            </div>
-                    </li>
-                    <li class="container-col-12 listFirst">
-                        <div class="row">
-                            <a class="col-9">CSS</a>
-                            <div class="col-2 d-flex justify-content-between chart">
-                                <img class="chartImg" src="img/pop_bar3.png" alt="4 out of 7"></img>
-                            </div>
-                    </li>
-                    <li class="container-col-12 listFirst">
-                        <div class="row">
-                            <a class="col-9">Webprefs</a>
-                            <div class="col-2 d-flex justify-content-between chart">
-                                <img class="chartImg" src="img/pop_bar3.png" alt="4 out of 7"></img>
-                            </div>
-                    </li>
-                    <li class="container-col-12 listFirst">
-                        <div class="row">
-                            <a class="col-9">Frameworks</a>
-                            <div class="col-2 d-flex justify-content-between chart">
-                                <img class="chartImg" src="img/pop_bar3.png" alt="4 out of 7"></img>
-                            </div>
-                    </li>
-                    <li class="container-col-12 listFirst">
-                        <div class="row">
-                            <a class="col-9">Animations</a>
-                            <div class="col-2 d-flex justify-content-between chart">
-                                <img class="chartImg" src="img/pop_bar3.png" alt="4 out of 7"></img>
-                            </div>
-                    </li>
-                    <li class="container-col-12 listFirst">
-                        <div class="row">
-                            <a class="col-9">Outils</a>
-                            <div class="col-2 d-flex justify-content-between chart">
-                                <img class="chartImg" src="img/pop_bar3.png" alt="4 out of 7"></img>
-                            </div>
-                    </li>
-                    <li class="container-col-12 listFirst">
-                        <div class="row">
-                            <a class="col-9">SEO</a>
-                            <div class="col-2 d-flex justify-content-between chart">
-                                <img class="chartImg" src="img/pop_bar2.png" alt="4 out of 7"></img>
-                            </div>
-                    </li>
-                </ul>
-            </section>
-            <section class="pl-3 pr-3 col-sm-6 articles">
-                <div class="mt-4 articlesTitle">
-                    <h2>ARTICLES POPULAIRES</h2>
-                    <h3>DES 10 DERNIERS JOURS</h3>
+                    </div>
                 </div>
-                <ul class="mt-4">
-                    <li class="d-flex justify-content-between listFirst">
-                        <div class="col-1">
-                            <img src="https://img.lafermeduweb.net/veille_68_48/img/links/2019/03/1102826152564011008.jpg"
-                                alt="Htrace : un outil pour faire du profiling HTTP/HTTPS avancé">
+                <div class="pt-4 border border-black-50 ml-2 mt-2 mr-2 mb-2 mb-lg-4 pb-md-4 rounded backgroundArticle">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a href="#">
+                                    <div class="border border-muted rounded ml-2 mr-2">
+                                        <img src="https://img.lafermeduweb.net/img_list_format/img/links/2019/03/1105730210576646144.jpg"
+                                            class="img-fluid" alt="articleTitle" />
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="articleDetail">
+                                    <div class="pl-3 pt-3 pb-3 titleArticle">
+                                        <a href="#" class="text-dark font-weight-bold">
+                                            Traduora: une plateforme de traduction collaborative avec une sortie multi
+                                            formats
+                                        </a>
+                                    </div>
+                                    <ul class="d-flex pl-3">
+                                        <li
+                                            class="list-group-item border border-secondary rounded mr-2 pl-2 pr-2 pt-1 pb-1">
+                                            <a href="#">
+                                                <span class="text-danger">#collaborative</span></a></li>
+                                        <li
+                                            class="list-group-item border border-secondary rounded mr-2 pl-2 pr-2 pt-1 pb-1">
+                                            <a href="#">
+                                                <span class="text-success">#traduction</span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="mb-4">
+                                    <span class="pl-3">Djo -</span>
+                                    <span class="text-black-50">13 Mars 2019 à 08h20</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-9">
-                            <a href="#">Htrace : un outil pour faire du profiling HTTP/HTTPS avancé</a>
+                    </div>
+                </div>
+                <div class="pt-4 border border-black-50 ml-2 mt-2 mr-2 mb-2 mb-lg-4 pb-md-4 rounded backgroundArticle">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a href="#">
+                                    <div class="border border-muted rounded ml-2 mr-2">
+                                        <img src="https://img.lafermeduweb.net/img_list_format/img/links/2019/03/1105730210576646144.jpg"
+                                            class="img-fluid" alt="articleTitle" />
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="articleDetail">
+                                    <div class="pl-3 pt-3 pb-3 titleArticle">
+                                        <a href="#" class="text-dark font-weight-bold">
+                                            Traduora: une plateforme de traduction collaborative avec une sortie multi
+                                            formats
+                                        </a>
+                                    </div>
+                                    <ul class="d-flex pl-3">
+                                        <li
+                                            class="list-group-item border border-secondary rounded mr-2 pl-2 pr-2 pt-1 pb-1">
+                                            <a href="#">
+                                                <span class="text-danger">#collaborative</span></a></li>
+                                        <li
+                                            class="list-group-item border border-secondary rounded mr-2 pl-2 pr-2 pt-1 pb-1">
+                                            <a href="#">
+                                                <span class="text-success">#traduction</span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="mb-4">
+                                    <span class="pl-3">Djo -</span>
+                                    <span class="text-black-50">13 Mars 2019 à 08h20</span>
+                                </div>
+                            </div>
                         </div>
-                    </li>
-                    <li class="d-flex justify-content-between">
-                        <div class="col-1">
-                            <img src="https://img.lafermeduweb.net/veille_68_48/img/links/2019/03/1102838663405359107.jpg"
-                                alt="Web : installez directement les dépendances npm depuis votre navigateur sans Webpack ou Browserify">
+                    </div>
+                </div>
+                <div class="pt-4 border border-black-50 ml-2 mt-2 mr-2 mb-2 mb-lg-4 pb-md-4 rounded backgroundArticle">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a href="#">
+                                    <div class="border border-muted rounded ml-2 mr-2">
+                                        <img src="https://img.lafermeduweb.net/img_list_format/img/links/2019/03/1105730210576646144.jpg"
+                                            class="img-fluid" alt="articleTitle" />
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="articleDetail">
+                                    <div class="pl-3 pt-3 pb-3 titleArticle">
+                                        <a href="#" class="text-dark font-weight-bold">
+                                            Traduora: une plateforme de traduction collaborative avec une sortie multi
+                                            formats
+                                        </a>
+                                    </div>
+                                    <ul class="d-flex pl-3">
+                                        <li
+                                            class="list-group-item border border-secondary rounded mr-2 pl-2 pr-2 pt-1 pb-1">
+                                            <a href="#">
+                                                <span class="text-danger">#collaborative</span></a></li>
+                                        <li
+                                            class="list-group-item border border-secondary rounded mr-2 pl-2 pr-2 pt-1 pb-1">
+                                            <a href="#">
+                                                <span class="text-success">#traduction</span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="mb-4">
+                                    <span class="pl-3">Djo -</span>
+                                    <span class="text-black-50">13 Mars 2019 à 08h20</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-9">
-                            <a href="#">Web : installez directement les dépendances npm depuis votre
-                                navigateur sans Webpack ou Browserify</a>
+                    </div>
+                </div>
+                <div class="pt-4 border border-black-50 ml-2 mt-2 mr-2 mb-2 mb-lg-4 pb-md-4 rounded backgroundArticle">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a href="#">
+                                    <div class="border border-muted rounded ml-2 mr-2">
+                                        <img src="https://img.lafermeduweb.net/img_list_format/img/links/2019/03/1105730210576646144.jpg"
+                                            class="img-fluid" alt="articleTitle" />
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="articleDetail">
+                                    <div class="pl-3 pt-3 pb-3 titleArticle">
+                                        <a href="#" class="text-dark font-weight-bold">
+                                            Traduora: une plateforme de traduction collaborative avec une sortie multi
+                                            formats
+                                        </a>
+                                    </div>
+                                    <ul class="d-flex pl-3">
+                                        <li
+                                            class="list-group-item border border-secondary rounded mr-2 pl-2 pr-2 pt-1 pb-1">
+                                            <a href="#">
+                                                <span class="text-danger">#collaborative</span></a></li>
+                                        <li
+                                            class="list-group-item border border-secondary rounded mr-2 pl-2 pr-2 pt-1 pb-1">
+                                            <a href="#">
+                                                <span class="text-success">#traduction</span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="mb-4">
+                                    <span class="pl-3">Djo -</span>
+                                    <span class="text-black-50">13 Mars 2019 à 08h20</span>
+                                </div>
+                            </div>
                         </div>
-                    </li>
-                    <li class="d-flex justify-content-between">
-                        <div class="col-1">
-                            <img src="https://img.lafermeduweb.net/veille_68_48/img/links/2019/03/1102836141575806976.jpg"
-                                alt="Focus sur les User Roles et ACL dans Laravel">
+                    </div>
+                </div>
+                <div class="pt-4 border border-black-50 ml-2 mt-2 mr-2 mb-2 mb-lg-4 pb-md-4 rounded backgroundArticle">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a href="#">
+                                    <div class="border border-muted rounded ml-2 mr-2">
+                                        <img src="https://img.lafermeduweb.net/img_list_format/img/links/2019/03/1105730210576646144.jpg"
+                                            class="img-fluid" alt="articleTitle" />
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="articleDetail">
+                                    <div class="pl-3 pt-3 pb-3 titleArticle">
+                                        <a href="#" class="text-dark font-weight-bold">
+                                            Traduora: une plateforme de traduction collaborative avec une sortie multi
+                                            formats
+                                        </a>
+                                    </div>
+                                    <ul class="d-flex pl-3">
+                                        <li
+                                            class="list-group-item border border-secondary rounded mr-2 pl-2 pr-2 pt-1 pb-1">
+                                            <a href="#">
+                                                <span class="text-danger">#collaborative</span></a></li>
+                                        <li
+                                            class="list-group-item border border-secondary rounded mr-2 pl-2 pr-2 pt-1 pb-1">
+                                            <a href="#">
+                                                <span class="text-success">#traduction</span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="mb-4">
+                                    <span class="pl-3">Djo -</span>
+                                    <span class="text-black-50">13 Mars 2019 à 08h20</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-9">
-                            <a href="#">Focus sur les User Roles et ACL dans Laravel</a>
-                        </div>
-                    </li>
-                    <li class="d-flex justify-content-between">
-                        <div class="col-1">
-                            <img src="https://img.lafermeduweb.net/veille_68_48/img/links/2019/03/1102828592571052034.jpg"
-                                alt="Vita : une gateway VPN simple et efficace">
-                        </div>
-                        <div class="col-9">
-                            <a href="#">Vita : une gateway VPN simple et efficace</a>
-                        </div>
-                    </li>
-                    <li class="d-flex justify-content-between">
-                        <div class="col-1">
-                            <img src="https://img.lafermeduweb.net/veille_68_48/img/links/2019/03/1105005441237561345.jpg"
-                                alt="Apprendre à maîtriser Docker en 5 leçons de débutant à expert">
-                        </div>
-                        <div class="col-9">
-                            <a href="#">Apprendre à maîtriser Docker en 5 leçons de débutant à expert</a>
-                        </div>
-                    </li>
-                    <li class="d-flex justify-content-between">
-                        <div class="col-1">
-                            <img src="https://img.lafermeduweb.net/veille_68_48/img/links/2019/03/1102831108314578946.jpg"
-                                alt="Une série vidéo sur le SEO dans les apps Javascript par Google">
-                        </div>
-                        <div class="col-9">
-                            <a href="#">Une série vidéo sur le SEO dans les apps Javascript par Google</a>
-                        </div>
-                    </li>
-                    <li class="d-flex justify-content-between">
-                        <div class="col-1">
-                            <img src="https://img.lafermeduweb.net/veille_68_48/img/links/2019/03/1102833683386589184.jpg"
-                                alt="Les Hooks React.js moins performants que l'utilisation de classes ?">
-                        </div>
-                        <div class="col-9">
-                            <a href="#">Les Hooks React.js moins performants que l'utilisation de classes ?</a>
-                        </div>
-                    </li>
-                    <li class="d-flex justify-content-between">
-                        <div class="col-1">
-                            <img src="https://img.lafermeduweb.net/veille_68_48/img/links/2019/03/1105010471365758977.jpg"
-                                alt="Gotify : un serveur opensource pour recevoir et envoyer des messages en temps réel via websockets et REST">
-                        </div>
-                        <div class="col-9">
-                            <a href="#">Gotify : un serveur opensource pour recevoir et envoyer des messages en temps
-                                réel via
-                                websockets et REST</a>
-                        </div>
-                    </li>
-                    <li class="d-flex justify-content-between">
-                        <div class="col-1">
-                            <img src="https://img.lafermeduweb.net/veille_68_48/img/links/2019/03/1105000453035696128.jpg"
-                                alt="Olive Video Editor : un éditeur de vidéo non-linéaire open source pour Windows, Mac et Linux">
-                        </div>
-                        <div class="col-9">
-                            <a href="#">Olive Video Editor : un éditeur de vidéo non-linéaire open source pour Windows,
-                                Mac et
-                                Linux</a>
-                        </div>
-                    </li>
-                    <li class="d-flex justify-content-between">
-                        <div class="col-1">
-                            <img src="https://img.lafermeduweb.net/veille_68_48/img/links/2019/03/1105007982692192257.jpg"
-                                alt="ArchiveBox : archivez des copies de sites en local avec tous les médias liés">
-                        </div>
-                        <div class="col-9">
-                            <a href="#">ArchiveBox : archivez des copies de sites en local avec tous les médias liés</a>
-                        </div>
-                    </li>
-                </ul>
+                    </div>
+                </div>
+                <div class="mb-5">
+                    <a href="#"
+                        class="border rounded border-warning bg-warning pl-4 pr-4 pt-2 pb-2 ml-3 mt-3 h-50 d-inline-block text-light font-weight-bold ">
+                        VOIR TOUTES LES VEILLES</a>
+                </div>
             </section>
+            <aside class="col-lg-4 container border-left">
+                <div class="row">
+                    <section class="pl-3 pr-3 col-sm-6 col-lg-12 trends">
+                        <div class="mt-4 trendsTitle">
+                            <h2>LES TENDANCES</h2>
+                            <h3>DES 10 DERNIERS JOURS</h3>
+                        </div>
+                        <ul class="mt-4">
+                            <li class="container-col-12 listFirst">
+                                <div class="row">
+                                    <a class="col-9 trendsLink" href="#">Console</a>
+                                    <div class="col-2 d-flex justify-content-between chart">
+                                        <img class="chartImg" src="img/pop_bar7.png" alt="4 out of 7"></img>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="container-col-12 listFirst">
+                                <div class="row">
+                                    <a class="col-9 trendsLink" href="#">Javascript</a>
+                                    <div class="col-2 d-flex justify-content-between chart">
+                                        <img class="chartImg" src="img/pop_bar4.png" alt="4 out of 7"></img>
+                                    </div>
+                            </li>
+                            <li class="container-col-12 listFirst">
+                                <div class="row">
+                                    <a class="col-9 trendsLink" href="#">React.js</a>
+                                    <div class="col-2 d-flex justify-content-between chart">
+                                        <img class="chartImg" src="img/pop_bar4.png" alt="4 out of 7"></img>
+                                    </div>
+                            </li>
+                            <li class="container-col-12 listFirst">
+                                <div class="row">
+                                    <a class="col-9 trendsLink" href="#">PHP</a>
+                                    <div class="col-2 d-flex justify-content-between chart">
+                                        <img class="chartImg" src="img/pop_bar3.png" alt="4 out of 7"></img>
+                                    </div>
+                            </li>
+                            <li class="container-col-12 listFirst">
+                                <div class="row">
+                                    <a class="col-9 trendsLink" href="#">CSS</a>
+                                    <div class="col-2 d-flex justify-content-between chart">
+                                        <img class="chartImg" src="img/pop_bar3.png" alt="4 out of 7"></img>
+                                    </div>
+                            </li>
+                            <li class="container-col-12 listFirst">
+                                <div class="row">
+                                    <a class="col-9 trendsLink" href="#">Webprefs</a>
+                                    <div class="col-2 d-flex justify-content-between chart">
+                                        <img class="chartImg" src="img/pop_bar3.png" alt="4 out of 7"></img>
+                                    </div>
+                            </li>
+                            <li class="container-col-12 listFirst">
+                                <div class="row">
+                                    <a class="col-9 trendsLink" href="#">Frameworks</a>
+                                    <div class="col-2 d-flex justify-content-between chart">
+                                        <img class="chartImg" src="img/pop_bar3.png" alt="4 out of 7"></img>
+                                    </div>
+                            </li>
+                            <li class="container-col-12 listFirst">
+                                <div class="row">
+                                    <a class="col-9 trendsLink" href="#">Animations</a>
+                                    <div class="col-2 d-flex justify-content-between chart">
+                                        <img class="chartImg" src="img/pop_bar3.png" alt="4 out of 7"></img>
+                                    </div>
+                            </li>
+                            <li class="container-col-12 listFirst">
+                                <div class="row">
+                                    <a class="col-9 trendsLink" href="#">Outils</a>
+                                    <div class="col-2 d-flex justify-content-between chart">
+                                        <img class="chartImg" src="img/pop_bar3.png" alt="4 out of 7"></img>
+                                    </div>
+                            </li>
+                            <li class="container-col-12 listFirst">
+                                <div class="row">
+                                    <a class="col-9 trendsLink" href="#">SEO</a>
+                                    <div class="col-2 d-flex justify-content-between chart">
+                                        <img class="chartImg" src="img/pop_bar2.png" alt="4 out of 7"></img>
+                                    </div>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="pl-3 pr-3 col-sm-6 col-lg-12 articles">
+                        <div class="mt-4 articlesTitle">
+                            <h2>ARTICLES POPULAIRES</h2>
+                            <h3>DES 10 DERNIERS JOURS</h3>
+                        </div>
+                        <ul class="mt-4">
+                            <li class="d-flex justify-content-between listFirst">
+                                <div class="col-1">
+                                    <img src="https://img.lafermeduweb.net/veille_68_48/img/links/2019/03/1102826152564011008.jpg"
+                                        alt="Htrace : un outil pour faire du profiling HTTP/HTTPS avancé">
+                                </div>
+                                <div class="col-9">
+                                    <a class="articleLink" href="#">Htrace : un outil pour faire du profiling HTTP/HTTPS
+                                        avancé</a>
+                                </div>
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                <div class="col-1">
+                                    <img src="https://img.lafermeduweb.net/veille_68_48/img/links/2019/03/1102838663405359107.jpg"
+                                        alt="Web : installez directement les dépendances npm depuis votre navigateur sans Webpack ou Browserify">
+                                </div>
+                                <div class="col-9">
+                                    <a class="articleLink" href="#">Web : installez directement les dépendances npm
+                                        depuis votre
+                                        navigateur sans Webpack ou Browserify</a>
+                                </div>
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                <div class="col-1">
+                                    <img src="https://img.lafermeduweb.net/veille_68_48/img/links/2019/03/1102836141575806976.jpg"
+                                        alt="Focus sur les User Roles et ACL dans Laravel">
+                                </div>
+                                <div class="col-9">
+                                    <a class="articleLink" href="#">Focus sur les User Roles et ACL dans Laravel</a>
+                                </div>
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                <div class="col-1">
+                                    <img src="https://img.lafermeduweb.net/veille_68_48/img/links/2019/03/1102828592571052034.jpg"
+                                        alt="Vita : une gateway VPN simple et efficace">
+                                </div>
+                                <div class="col-9">
+                                    <a class="articleLink" href="#">Vita : une gateway VPN simple et efficace</a>
+                                </div>
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                <div class="col-1">
+                                    <img src="https://img.lafermeduweb.net/veille_68_48/img/links/2019/03/1105005441237561345.jpg"
+                                        alt="Apprendre à maîtriser Docker en 5 leçons de débutant à expert">
+                                </div>
+                                <div class="col-9">
+                                    <a class="articleLink" href="#">Apprendre à maîtriser Docker en 5 leçons de débutant
+                                        à expert</a>
+                                </div>
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                <div class="col-1">
+                                    <img src="https://img.lafermeduweb.net/veille_68_48/img/links/2019/03/1102831108314578946.jpg"
+                                        alt="Une série vidéo sur le SEO dans les apps Javascript par Google">
+                                </div>
+                                <div class="col-9">
+                                    <a class="articleLink" href="#">Une série vidéo sur le SEO dans les apps Javascript
+                                        par Google</a>
+                                </div>
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                <div class="col-1">
+                                    <img src="https://img.lafermeduweb.net/veille_68_48/img/links/2019/03/1102833683386589184.jpg"
+                                        alt="Les Hooks React.js moins performants que l'utilisation de classes ?">
+                                </div>
+                                <div class="col-9">
+                                    <a class="articleLink" href="#">Les Hooks React.js moins performants que
+                                        l'utilisation de classes ?</a>
+                                </div>
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                <div class="col-1">
+                                    <img src="https://img.lafermeduweb.net/veille_68_48/img/links/2019/03/1105010471365758977.jpg"
+                                        alt="Gotify : un serveur opensource pour recevoir et envoyer des messages en temps réel via websockets et REST">
+                                </div>
+                                <div class="col-9">
+                                    <a class="articleLink" href="#">Gotify : un serveur opensource pour recevoir et
+                                        envoyer des messages en
+                                        temps
+                                        réel via
+                                        websockets et REST</a>
+                                </div>
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                <div class="col-1">
+                                    <img src="https://img.lafermeduweb.net/veille_68_48/img/links/2019/03/1105000453035696128.jpg"
+                                        alt="Olive Video Editor : un éditeur de vidéo non-linéaire open source pour Windows, Mac et Linux">
+                                </div>
+                                <div class="col-9">
+                                    <a class="articleLink" href="#">Olive Video Editor : un éditeur de vidéo
+                                        non-linéaire open source pour
+                                        Windows,
+                                        Mac et
+                                        Linux</a>
+                                </div>
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                <div class="col-1">
+                                    <img src="https://img.lafermeduweb.net/veille_68_48/img/links/2019/03/1105007982692192257.jpg"
+                                        alt="ArchiveBox : archivez des copies de sites en local avec tous les médias liés">
+                                </div>
+                                <div class="col-9">
+                                    <a class="articleLink" href="#">ArchiveBox : archivez des copies de sites en local
+                                        avec tous les médias
+                                        liés</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </aside>
         </div>
     </div>
     <!-- Pied de page -->
