@@ -1,4 +1,33 @@
+/* Résolution iPad.*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 
+    .petit_nuage {
+        position: center;
+    }
+    .contact {
+        margin-top: 8%;
+        margin-bottom: 8%;
+    }
+
+    .orangeBox{
+        
+    }
+}
+
+/* Résolution Desktop.*/
+@media screen and (min-width: 1025px) {
+    .contact {
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: 6%;
+        margin-bottom: 2%;
+    }
+
+    .sendButton {
+        font-size: 150%;
+    }
+
+}
 
 /* CONTACT US */
 
@@ -14,15 +43,14 @@ PARTIE DE BASE QUI POSE PROBLEME
     height: 400px;
 }
 */
-.contact{
+.contact {
     padding-bottom: 4%
-
 }
 
 
 
 
-.col-md-3 {
+.orangeBox {
     background: #ff9b00;
     padding: 4%;
     border-top-left-radius: 0.5rem;
@@ -39,10 +67,10 @@ PARTIE DE BASE QUI POSE PROBLEME
 
 .contact-info h2 {
     margin-bottom: 10%;
-    color:white;
+    color: white;
 }
 
-.col-md-9 {
+.inputBox {
     background: #fff;
     padding: 3%;
     border-top-right-radius: 0.5rem;
@@ -64,24 +92,30 @@ PARTIE DE BASE QUI POSE PROBLEME
     box-shadow: none;
 }
 
-.petit_nuage{
+.petit_nuage {
 
-    width:40%;
+    width: 40%;
 }
 
-.mail_wings{
-    width:40%;
+.mail_wings {
+    width: 40%;
     transform: rotate(10deg);
+
 }
 
-
-
-.text_contact_us{
+.text_contact_us {
     padding-bottom: 2%;
-    color:white;
+    color: white;
+    text-align: center;
 }
 
-.para_contact{
+.para_contact {
     padding-bottom: 2px;
-   }
+    text-align: center;
+}
 
+/* Add from "Loup" */
+
+.contactUs {
+    text-align: center; 
+}

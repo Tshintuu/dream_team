@@ -28,10 +28,23 @@
     .articlesTitle h2{
         font-size: 2rem !important;
     }
+    
 }
 
 /* Résolution Desktop.*/
-@media screen and (min-width: 1025px) {}
+@media screen and (min-width: 1025px) {
+
+    .endtext .porte {
+        width: 250px;
+        height: 400px;
+        margin-top : -25%;
+    }
+
+    .listFooter {
+        margin-left:200px!important;
+    }
+
+}
 
 
 /*@import url('https://fonts.googleapis.com/css?family=Barlow');*/

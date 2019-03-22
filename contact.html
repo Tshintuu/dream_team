@@ -7,46 +7,39 @@
     <title>La cabane au fond du Web</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="contact.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
-
-
-
-
-
-
-
     <header>
         <!-- En tête de la page. -->
-        <nav class="navbar navbar-light bg-light container-col-12 fixed-top">
+        <nav class="navbar navbar-light bg-light container-col-12 fixed-top shadow-sm mb-5">
             <div class="col-lg-1 col-0"></div>
-            <div class="col-8 col-lg-1">
-                <a href="index.html"><img src="img/logo.png" alt="Logo" class="logoHead" /></a>
+            <div class="col-8 col-sm-10 col-lg-1">
+                <img src="img/logo.png" alt="Logo" class="logoHead" />
             </div>
             </div>
             <form class="d-none d-lg-inline form-inline">
                 <div class="input-group">
-                    <input class="form-control" type="search" placeholder="Recherche une veille, un mot-clé, un site web..."
-                        aria-label="Search">
+                    <input class="form-control" type="search"
+                        placeholder="Recherche une veille, un mot-clé, un site web..." aria-label="Search">
                     <div class="input-group-append mr-sm-4">
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon2"><img src="img/search_icon.png"
-                                alt="search" class="img_search" /> </button>
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2"><img
+                                src="img/search_icon.png" alt="search" class="img_search" /> </button>
                     </div>
                 </div>
             </form>
             <div>
-                <a class="btn btn d-lg-none" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
-                    aria-controls="collapseExample">
+                <a class="btn btn d-lg-none" data-toggle="collapse" href="#collapseExample" role="button"
+                    aria-expanded="false" aria-controls="collapseExample">
                     <img src="img/search_icon.png" alt="icon" class="img_search" />
                 </a>
 
             </div>
             <div class="dropdown d-flex justify-content-end">
-                <button class="btn btn-secondary dropdown-toggle d-none d-lg-inline" type="button" id="dropdownMenuButton"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <button class="btn btn-secondary dropdown-toggle d-none d-lg-inline" type="button"
+                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     MON COMPTE
                 </button>
                 <div class="dropdown-menu dropdown-menu-right bg-light" aria-labelledby="dropdownMenuButton">
@@ -55,8 +48,9 @@
                     <a class="dropdown-item" href="#">Se connecter via Facebook</a>
                     <a class="dropdown-item" href="#">Se connecter via Github</a>
                 </div>
-                <button class="navbar-toggler d-lg-none" type="button" data-toggle="dropdown" data-target="#navbarToggleExternalContent"
-                    aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" id="searchBtn">
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="dropdown"
+                    data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation" id="searchBtn">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="dropdown-menu dropdown-menu-right bg-dark" aria-labelledby="dropdownMenuButton">
@@ -66,14 +60,13 @@
                     <a class="dropdown-item" href="#">Se connecter via Github</a>
                 </div>
             </div>
-            <div class="col-2"></div>
-            </div>
+            <div class="col-2 col-sm-0"></div>
             <div class="collapse d-lg-none" id="collapseExample">
                 <div class="card card-body bg-light border-light">
                     <form class="form-inline">
                         <div class="input-group">
-                            <input class="form-control" type="search" placeholder="Recherche une veille, un mot-clé, un site web..."
-                                aria-label="Search">
+                            <input class="form-control" type="search"
+                                placeholder="Recherche une veille, un mot-clé, un site web..." aria-label="Search">
                             <div class="input-group-append mr-sm-4">
                                 <button class="btn btn-outline-warning bg-warning" type="button" id="button-addon2"><img
                                         src="img/search_icon.png" alt="search" class="img_search" /> </button>
@@ -82,62 +75,62 @@
                     </form>
                 </div>
             </div>
+            <div class="col-0 col-sm-2 col-lg-0"></div>
         </nav>
     </header>
 
-
     <!-- CONTACT US -->
-
-
-    <div class="container contact">
-        <div class="row">
-            <div class="col-md-3 ml-2 rounded mr-2 mt-3">
+    <div class="container-12 contact">
+        <div class="row ml-2 blockContact">
+            <div class="col-12 col-md  ml-2 rounded mr-2 mt-3 mr-md-0 rounded-left-md orangeBox">
                 <div class="contact-info">
-                    <img src="img/mail_wings.png" class="mail_wings" alt="image" />
-                    <h2>NOUS CONTACTER</h2>
-
+                    <img src="img/mail_wings.png" class="mail_wings rounded rounded mx-auto d-block" alt="image" />
+                    <h2 class="contactUs">NOUS CONTACTER</h2>
                     <div>
-                        <img src="img/Petit_Nuage.png" alt="petit_nuage" class="petit_nuage">
-
+                        <img src="img/Petit_Nuage.png" alt="petit_nuage" class="petit_nuage rounded rounded mx-auto d-block">
                     </div>
-
                     <div class="text_contact_us">
                         <h3>Une question, une remarque, un thème à soumettre ? C'est par ici</h3>
-                        <p class="para_contact">L'équipe de la Cabane au fond du Web est à votre disposition pour
+                        <p class="para_contact">L'équipe de la Cabane au fond du Web est à votre
+                            disposition pour
                             répondre à vos questions et demandes.</p>
                     </div>
-
                 </div>
             </div>
-            <div class="col-md-9">
-                <div class="contact-form">
-                    <div class="form-group">
-                        <label class="control-label col-sm-2" for="fname">Prénom:</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="fname" placeholder="Entrez votre prénom" name="fname">
+            <div class="col-12 col-md  ml-2 mr-2 mt-md-3 mr-md-3 ml-md-0 rounded inputBox">
+                <div class="contact-form pl-lg-5 mx-auto" style="width: 100%";>
+                    <div class="form-group pb-lg-3">
+                        <label class="control-label col-sm-2 mt-lg-2" for="fname">Prénom:</label>
+                        <div class="col-sm-10 ">
+                            <input type="text" class="form-control form-control-lg" id="fname" placeholder="Entrez votre prénom"
+                                name="fname">
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group pb-lg-3">
                         <label class="control-label col-sm-2" for="lname">Nom:</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="lname" placeholder="Entrez votre nom" name="lname">
+                            <input type="text" class="form-control form-control-lg" id="lname" placeholder="Entrez votre nom"
+                                name="lname">
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label class="control-label col-sm-2" for="email">Adresse email:</label>
+                    <div class="form-group pb-lg-3">
+                        <label class="control-label col-sm-2 col-md-5" for="email">Adresse email:</label>
                         <div class="col-sm-10">
-                            <input type="email" class="form-control" id="email" placeholder="Entrez votre email" name="email">
+                            <input type="email" class="form-control form-control-lg" id="email" placeholder="Entrez votre email"
+                                name="email">
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group pb-lg-5">
                         <label class="control-label col-sm-2" for="comment">Message:</label>
                         <div class="col-sm-10">
-                            <textarea class="form-control" rows="5" id="comment"></textarea>
+                            <textarea class="form-control form-control-lg" rows="5" id="comment"></textarea>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">
-                            <button type="submit" class="w-100 btn btn-default bg-warning">Envoyer mon message</button>
+                            <button type="submit" class="w-100 btn btn-default bg-warning">
+                                <span class="sendButton">Envoyer mon message</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -145,16 +138,12 @@
         </div>
     </div>
 
-
-
-
-
     <!-- Pied de page -->
-    <footer class="pl-1 pr-2 pt-3 styleFooter">
-        <div class="container col-12 d-flex flex-column flex-lg-row">
+    <footer class="pl-1 pt-3 styleFooter">
+        <div class="container col-12 d-flex flex-column flex-lg-row rounded">
             <ul class="nav d-inline d-md-flex">
                 <li class="nav-item link">
-                    <a class="nav-link active" href="#">Mention légales</a>
+                    <a class="nav-link active" href="#">Mentions légales</a>
                 </li>
                 <li class="nav-item link">
                     <a class="nav-link" href="#">Vie privée</a>
@@ -166,47 +155,60 @@
                     <a class="nav-link" href="#">Proposer une veille</a>
                 </li>
                 <li class="nav-item link">
-                    <a class="nav-link" href="#">Nous contacter</a>
+                    <a class="nav-link" href="contact.html">Nous contacter</a>
                 </li>
             </ul>
             <div class="social d-inline d-md-flex mt-4">
                 <p class="nav-link follow">Suivez-nous</p>
                 <ul class="nav d-flex d-md-flex">
-                    <li class="nav-item"><a class="nav-link" href="#"><img src="img/facebook.png" alt="facebook" class="logoFooter" />
+                    <li class="nav-item"><a class="nav-link" href="#"><img src="img/facebook.png" alt="facebook"
+                                class="logoFooter" />
                             <span class="ml-4 text-light d-none d-md-inline textFb">Facebook</span>
                         </a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><img src="img/twitter.png" alt="twitter" class="logoFooter" /><span
+                    <li class="nav-item"><a class="nav-link" href="#"><img src="img/twitter.png" alt="twitter"
+                                class="logoFooter" /><span
                                 class="ml-4 text-light d-none d-md-inline textTw">Twitter</span></a></li>
                 </ul>
             </div>
         </div>
         <hr class="lineFooter" />
-        <div class="endtext">
-            <h3 class="footerTitle">La ferme du web est un site de veille technologiques destinées aux développeurs,
-                designers et ergonomes
-                web.</h3>
-            <p class="endparaf">Créée en 2008, La Ferme du Web est une plateforme dédiée au partage des connaissances,
-                astuces, outils
-                et bonnes pratiques du web / mobile.
-                Les thématiques sont variées et s'adressent particulièrement aux développeurs, webdesigners,
-                webmarketeurs, chefs de projets, webmasters et tous curieux du web.
-                Tous les jours, retrouvez votre dose de veille techno et créez vos alertes emails sur les sujets qui
-                vous intéressent.
-                <strong>Le net, ça se cultive !</strong></p>
-            <img src="img/porte.png" alt="porte" class="porte d-none d-md-inline" />
+        <div class="endtext container-col-12">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3 class="footerTitle">La ferme du web est un site de veille technologiques destinées aux
+                        développeurs,
+                        designers et ergonomes
+                        web.</h3>
+                    <p class="endparaf">Créée en 2008, La Ferme du Web est une plateforme dédiée au partage des
+                        connaissances,
+                        astuces, outils
+                        et bonnes pratiques du web / mobile.
+                        Les thématiques sont variées et s'adressent particulièrement aux développeurs, webdesigners,
+                        webmarketeurs, chefs de projets, webmasters et tous curieux du web.
+                        Tous les jours, retrouvez votre dose de veille techno et créez vos alertes emails sur les sujets
+                        qui
+                        vous intéressent.
+                        <strong>Le net, ça se cultive !</strong></p>
+
+                </div>
+                <div class="col-sm-2"></div>
+                <div class="col-sm-4">
+                    <img src="img/porte.png" alt="porte" class="porte d-none d-md-inline" />
+                </div>
+            </div>
         </div>
-
-
-
+    </footer>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <!--<script src="assets/main.js"></script>-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
 </body>
 
 
