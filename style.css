@@ -31,7 +31,62 @@
 }
 
 /* Résolution Desktop.*/
-@media screen and (min-width: 1025px) {}
+@media screen and (min-width: 1025px) {
+    .mainBlock{
+        padding-top: 5%;
+    }
+    .sizeH1{
+        font-size: 3rem !important;
+    }
+
+    .trends{
+        padding-top: 50%;
+    }
+
+    .trendsTitle h2{
+        font-size: 2.2rem !important;
+    }
+
+    .trendsTitle h3, .articlesTitle h3{
+        font-size: 1.2rem !important;
+    }
+
+    .articlesTitle h2{
+        font-size: 2rem !important;
+    }
+
+    .backgroundArticle{
+        transition: box-shadow 0.7s;
+    }
+
+    .backgroundArticle:hover{
+        box-shadow: 1px 1px 30px rgb(202, 202, 202);
+        transition: box-shadow 0.7s;
+    }
+
+    .trendsLink{
+        text-decoration: none;
+        color: black;
+        transition: color 0.4s;
+    }
+
+    .trendsLink:hover{
+        text-decoration: none;
+        color: orange;
+        transition: color 0.4s;
+    }
+
+    .articleLink{
+        text-decoration: none;
+        color: black;
+        transition: color 0.4s;
+    }
+
+    .articleLink:hover{
+        text-decoration: none;
+        color: #455b72;
+    }
+}
 
 
 /*@import url('https://fonts.googleapis.com/css?family=Barlow');*/
@@ -89,10 +144,6 @@ body {
 .follow {
     font-weight: 600;
     padding-top: 2.8% !important;
-}
-
-.logoHead {
-    width: 120px
 }
 
 .styleFooter {
