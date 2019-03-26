@@ -98,6 +98,11 @@
         text-decoration: none;
         color: #455b72;
     }
+    
+}
+
+@media projection{
+
 }
 
 
@@ -285,3 +290,4 @@ body {
 }
 
 /* end add "Loup" */
+
